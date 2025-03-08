@@ -1,0 +1,92 @@
+ㅤ
+ **CONFIGURAÇÃO INICIAL**
+
+
+*1. Configuração da API do YouTube (caso ainda não tenha feito):*
+
+   ***a)*** Abra a pasta "YTAnalyzer" e, em seguida, abra o arquivo "config.txt".
+
+   ***b)*** Insira sua chave da API do YouTube no seguinte formato:
+      YT_API_KEY=SUA_CHAVE_AQUI
+
+*2. Idioma / Sair:*
+
+   [L] Idiomas       Digite L para alterna o idioma da interface.
+   [X] Sair          Digite X para encerra o programa.
+
+
+ **FERRAMENTAS DE ANÁLISE DO YOUTUBE**
+
+                            *- PLAYLIST CHECKER -*
+
+  Essa função permite analisar playlists do YouTube, exibindo dados como título, 
+  duração e estatísticas dos vídeos. O usuário pode escolher entre analisar toda 
+  a playlist ou um intervalo específico de vídeos. Os resultados podem ser salvos 
+  em formatos .xlsx ou .txt.
+
+
+*Uso:* 
+
+  **python ytanalyzer.py -playlist [início] [fim] [opções]**
+
+
+*Opções de Análise:*
+
+  **-d**          Exibe as durações dos vídeos e o total.
+  **-v**          Exibe o número de visualizações por vídeo e o total de visualizações.
+  **-l**          Exibe o número de curtidas por vídeo e o total de curtidas.
+  **-c**          Exibe o número de comentários por vídeo e o total de comentários.
+  **-date**       Inclui a data e a hora da análise.
+
+
+*Exemplos de entradas:*
+
+  ***1)*** Análise simples completa da playlist (exibe título e Nº):
+      **python ytanalyzer.py -playlist**
+
+  ***2)*** Análise simples customizável (vídeos 1 a 5 da playlist):
+      **python ytanalyzer.py -playlist 1 5**
+
+  ***3)*** Exibindo comentários:
+      **python ytanalyzer.py -playlist -c**
+
+  ***4)*** Opções combinadas (exibe vídeos 1 a 14 da playlist, além da durações, 
+            visualizações, curtidas, comentários e data):
+      **python ytanalyzer.py -playlist 1 14 -d -v -l -c -date**
+
+
+*URL da playlist:*
+
+  Após dar uma entrada, a ferramenta vai perguntar a URL ou ID da playlist:
+  "Digite o ID ou URL da playlist:"
+
+  Forneça a URL ou ID:
+    URL: www.youtube.com/watch?v=JGwWNGJdvx8&list=PL_Q15fKxrBb4gT7eMNvTvrFMmqDDNMXMk
+    ID:  PL_Q15fKxrBb4gT7eMNvTvrFMmqDDNMXMk
+
+
+*Relatórios:*
+
+  Após a análise, escolha uma das opções caso queira salvar o resultado em um arquivo:
+    [1] Salvar resultado em XLSX       Relatório em Excel (Recomendado)
+    [2] Salvar resultado em TXT        Relatório em arquivo de texto
+
+
+ **DICAS EXTRAS**
+   Dicas gerais de terminal/CMD
+
+  ***1)*** Tab - Completação automática:
+      Pressione a tecla Tab para completar automaticamente um comando ou caminho de 
+      diretório. Isso ajuda a economizar tempo, evitando a digitação de caminhos 
+      longos ou comandos incompletos.
+
+  ***2)*** Seta para cima/para baixo - Histórico de comandos:
+      Use a seta para cima para percorrer os comandos anteriores executados e a seta 
+      para baixo para voltar para os comandos mais recentes.
+
+
+
+ *↑ ROLE PARA CIMA PARA LER O INÍCIO ↑*
+ㅤ
+ㅤ
+ㅤ
