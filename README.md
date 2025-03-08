@@ -13,21 +13,40 @@ In the future, it will be a complete tool for YouTube analysis.
 
 ## Installation
 
-### On Windows
+## On Windows
 
 - [Python 3.7 or higher](https://www.python.org/downloads/)
-- Windows 10/11 (May work on other versions of Windows, but it has not been tested).
+- Windows 10/11 - 64 Bits (May work on other versions of Windows, but it has not been tested).
 
-### On Linux
+**Open the CMD**
 
-Install Git if you don't have it.
+1. Install Git if you don't have it.
+
+```
+curl -LO https://github.com/git-for-windows/git/releases/download/v2.48.1.windows.1/Git-2.48.1-64-bit.exe
+```
+3. After that, execute:
+```
+start Git-2.48.1-64-bit.exe
+
+```
+4. Clone the repository and then open it.
+
+```
+git clone https://github.com/gabrieldukee/YTAnalyzer.git
+cd YTAnalyzer
+```
+
+## On Linux
+
+1. Install Git if you don't have it.
 
 ```
 sudo apt-get install git
 ```
-Clone the repository and then open it.
+2. Clone the repository and then open it.
 ```
-git clone https://github.com/
+git clone https://github.com/gabrieldukee/YTAnalyzer.git
 cd YTAnalyzer
 ```
 
