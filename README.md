@@ -28,7 +28,6 @@ curl -LO https://github.com/git-for-windows/git/releases/download/v2.48.1.window
 3. After that, execute:
 ```
 start Git-2.48.1-64-bit.exe
-
 ```
 4. Clone the repository and then open it.
 
